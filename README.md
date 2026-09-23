@@ -144,3 +144,75 @@ else if (value == "RELAY_ON") {
 else if (value == "RELAY_OFF") {
   digitalWrite(RELAY_PIN, LOW);
 }
+```
+
+---
+
+## Android APK available for installation
+
+I have also uploaded the **APK file here, ready to be installed directly on Android devices**, because after more than 14 days the application is still waiting to be published on Google Play.
+
+The app has been designed to work **in the background** and remains active until the user explicitly closes it. This allows it to keep running even when the smartphone display is turned off.
+
+The main goal is to **reuse an old Android smartphone as a gateway**, instead of adding more electronic waste. Smartphones contain batteries, electronic circuits, and several materials that can be difficult to dispose of properly and may have an environmental impact when they unnecessarily become waste.
+
+The smartphone can receive data and commands from an **MQTT broker** through Wi-Fi or the mobile network and forward them via **Bluetooth** to compatible hardware devices such as:
+
+* ESP32
+* Bluetooth development boards
+* microcontrollers with Bluetooth support
+* prototypes and experimental electronic systems
+
+In this way, the smartphone can act as a bridge between the Internet and local hardware.
+
+For example, incoming commands can be used to control:
+
+* motors
+* motor drivers
+* relays
+* servomotors
+* PWM outputs
+* digital outputs
+* other actuators
+
+At the same time, the hardware device can send data back to the smartphone from:
+
+* sensors
+* digital inputs
+* analog inputs
+* monitoring systems
+* IoT devices
+
+Another important advantage is related to the phone's physical connection.
+
+On many smartphones, it can be inconvenient or difficult to **keep the device charging while using the USB port at the same time for communication with external hardware**.
+
+By using **Bluetooth** for communication with an ESP32 or other boards, the phone's USB port can remain dedicated entirely to charging.
+
+This makes it possible to keep the smartphone powered and operational for long periods of time, making it suitable for use as a **permanent or semi-permanent IoT gateway**.
+
+The smartphone can therefore make use of its existing hardware capabilities again, including:
+
+* Wi-Fi
+* mobile network
+* Bluetooth
+* battery
+* processor
+* Android operating system
+
+turning it into a real **reusable IoT gateway**.
+
+In many experimental projects, this approach can remove the need for a dedicated gateway with its own modem or SIM card, allowing an old Android device that is already available to be reused instead.
+
+The basic idea of the project is simple:
+
+**Internet / MQTT Broker → Android Smartphone → Bluetooth → ESP32 / Hardware**
+
+and in the opposite direction:
+
+**Sensors / Hardware → Bluetooth → Android Smartphone → MQTT Broker / Internet**
+
+In this way, an old smartphone can become useful again in IoT, robotics, home automation, and experimental projects, extending its useful life while also helping reduce electronic waste.
+
+
+
