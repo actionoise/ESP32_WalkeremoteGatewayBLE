@@ -150,7 +150,12 @@ else if (value == "RELAY_OFF") {
 
 ## Android APK available for installation
 
-I have also uploaded the **APK file here, ready to be installed directly on Android devices**, because after more than 14 days the application is still waiting to be published on Google Play.
+the app apk file for android is available 
+on this repo or on PlayStore in this link :
+
+
+https://play.google.com/store/apps/details?id=appinventor.ai_miktavol.WalkeremoteBLETest1_V11_WSS_FINAL
+
 
 The app has been designed to work **in the background** and remains active until the user explicitly closes it. This allows it to keep running even when the smartphone display is turned off.
 
